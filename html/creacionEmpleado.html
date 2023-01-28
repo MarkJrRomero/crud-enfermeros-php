@@ -1,0 +1,90 @@
+<div class="col-xxl">
+  <div class="card mb-4">
+    <div class="card-header d-flex align-items-center justify-content-between">
+      <h5 class="mb-0">Creacion de Usuario (Enfermero)</h5>
+    </div>
+    <div class="card-body">
+      <form method="POST" action="../php/crearEmpl.php">
+
+        <div class="row mb-3">
+          <label class="col-sm-2 col-form-label" for="nombre">Name</label>
+          <div class="col-sm-10">
+            <input required type="text" class="form-control" id="nombre" name="nombre" placeholder="name">
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <label class="col-sm-2 col-form-label" for="cedula">Cedula</label>
+          <div class="col-sm-10">
+            <input required type="number" class="form-control" id="cedula" name="cedula" placeholder="1402186737">
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <label class="col-sm-2 col-form-label" for="date">Fecha de nacimiento</label>
+          <div class="col-sm-10">
+            <div class="input-group input-group-merge">
+              <input required type="date" id="date" name="date" class="form-control" >
+            </div>
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <label class="col-sm-2 col-form-label" for="email">Email</label>
+          <div class="col-sm-10">
+            <div class="input-group input-group-merge">
+              <input required type="email" id="email" name="email" class="form-control" placeholder="email@example.com" aria-label="email@example.com" aria-describedby="email2">
+            </div>
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <label class="col-sm-2 col-form-label" for="telefono">Telefono</label>
+          <div class="col-sm-10">
+            <input required type="text" id="telefono" name="telefono" class="form-control phone-mask" placeholder="301 204 6175" aria-label="301 204 6175" aria-describedby="telefono">
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <label class="col-sm-2 col-form-label" for="user">Usuario de ingreso</label>
+          <div class="col-sm-10">
+            <input required type="text" id="user" name="user" class="form-control phone-mask" placeholder="user" aria-label="301 204 6175" aria-describedby="telefono">
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <label class="col-sm-2 col-form-label" for="pass">Contraseña de ingreso</label>
+          <div class="col-sm-10">
+            <input required type="text" id="pass" name="pass" class="form-control phone-mask" placeholder="pass" aria-label="301 204 6175" aria-describedby="telefono">
+          </div>
+        </div>
+        
+        <div class="row mb-3">
+          <small class="text-light fw-semibold">Profesiones </small>
+
+          <div class="form-check col-sm-10 ms-3">
+            <input class="form-check-input" type="checkbox"  id="enfermeria" name="enfermeria">
+            <label class="form-check-label" for="enfermeria"> Enfermeria </label>
+          </div>
+
+          <div class="form-check col-sm-10 ms-3">
+            <input class="form-check-input" type="checkbox"  id="odontologia" name="odontologia">
+            <label class="form-check-label" for="odontologia"> Odontologia </label>
+          </div>
+
+          <div class="form-check col-sm-10 ms-3">
+            <input class="form-check-input" type="checkbox"  id="nutricion" name="nutricion">
+            <label class="form-check-label" for="nutricion"> Nutricion </label>
+          </div>
+
+        </div>
+       
+        <div class="row justify-content-end">
+          <div class="col-sm-10">
+            <button type="submit" class="btn btn-primary">Crear</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
